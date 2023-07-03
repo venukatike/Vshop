@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vshop.Main" 
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" VerticalOptions="CenterAndExpand" ColumnDefinitions="*,*" Padding="10,0,20,0">
+            <!-- Here add the code that is being explained in this block-->
+            <!-- Back button-->
+            <Button Grid.Row="0" Grid.Column="0" ImageSource="ArrowLeft2" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40" BackgroundColor="Transparent" CornerRadius="15"/>
+            <!--Skip label-->
+            <Label Grid.Row="0" Grid.Column="1" Text="Skip" FontSize="15" HorizontalTextAlignment="End" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+            <!--Main imagen with background-->
+            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="Background" Aspect="AspectFill"/>
+            <Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Source="Shop" Margin="0,50,0,0" VerticalOptions="Start" HeightRequest="200" WidthRequest="250"/>
+            <!-- Title-->
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="V" TextColor="#F7A392"/>
+                        <Span Text="shop" TextColor="#bf2103"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <!-- Description-->
+            <Label Grid.Row="3" Grid.Column="0" 
+                   Grid.ColumnSpan="2" 
+                   Text="Welcome to Vshop,&#10;easy and fast." 
+                   Padding="0,10" 
+                   HorizontalTextAlignment="Center" FontSize="20"/>
+            <!-- Rounded button-->
+            <Button 
+                Grid.Row="4"
+                Grid.Column="0" Grid.ColumnSpan="2" 
+                ImageSource="WriteArrow1"  
+                HorizontalOptions="Center" BackgroundColor="#F58414" 
+                HeightRequest="110" WidthRequest="110" CornerRadius="55" Margin="0,30,0,0"
+                Clicked="HomePage">
+
+               
+
+            </Button>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

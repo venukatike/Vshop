@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vshop.view.FlyoutHeder">
+  <ContentView.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Aspect="AspectFill" Source="dradient.jpg" Grid.ColumnSpan="5" Grid.RowSpan="4"/>
+            <Image Source="download.png" HeightRequest="80" WidthRequest="80" Grid.Column="1" Grid.Row="1" HorizontalOptions="Start" VerticalOptions="End"/>
+
+            <StackLayout Grid.Row="1" VerticalOptions="CenterAndExpand" Margin="10,0,0,0" Orientation="Vertical"
+                Grid.Column="2" Grid.ColumnSpan="3">
+                <Label Text="User Name"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="34"
+                    HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"/>
+                <Label Text="www.user@gmail.com"
+                       TextColor="white"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="End"/>
+            </StackLayout>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

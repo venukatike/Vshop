@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Vshop.MainPage"
+            xmlns:view="clr-namespace:Vshop.view" 
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            android:TabbedPage.IsSwipePagingEnabled="False" UnselectedTabColor="Black" SelectedTabColor="Red" BarBackground="white" 
+            Title="Vshop"
+            NavigationPage.HasNavigationBar="False">
+
+    <view:HomePage Title="Home" IconImageSource="@drawable/Home">
+    </view:HomePage>
+    <view:Categories Title="Categories" IconImageSource="@drawable/category">
+        
+    </view:Categories>
+    <view:Orders Title="Orders" IconImageSource="@drawable/Orders">
+        
+    </view:Orders>
+    <view:Account Title="Account" IconImageSource="@drawable/Account">
+        
+    </view:Account>
+
+</TabbedPage>
